@@ -97,14 +97,7 @@ YoutubePlayerKrd(
 Control the player dynamically:
 
 ```dart
-YoutubePlayerController _controller = YoutubePlayerController();
-
-_controller.play();
-_controller.pause();
-_controller.seekTo(Duration(seconds: 30));
-_controller.mute();
-_controller.unMute();
-_controller.toggleFullScreen();
+not now
 ```
 
 ## 📝 License
