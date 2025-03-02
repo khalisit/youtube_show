@@ -1,6 +1,5 @@
 # Youtube Player KRD
-
-<div style="display: flex; justify-content: center;"> <img src="https://www.svgrepo.com/show/13671/youtube.svg" width="90px" height="90px" ></div>
+<img src="https://www.svgrepo.com/show/13671/youtube.svg" width="90px" height="90px" >
 
 A powerful and fully customizable **YouTube Player** package for Flutter, allowing seamless integration of YouTube videos with full control over playback options.
 
