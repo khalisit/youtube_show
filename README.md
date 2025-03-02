@@ -64,14 +64,16 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Flutter YouTube Player")),
-      body: Center(child:  FlutterYoutubePlayer(
-                              url: 'url of youtube',
-                              width: 360.0,
-                              height: 203.0,
-                              showControls: true,
-                              showFullScreen: true,
+      body: Center(child:
+       FlutterYoutubePlayer(
+            url: 'url of youtube',
+            width: 360.0,
+            height: 203.0,
+            showControls: true,
+            showFullScreen: true,
 
-                            ),),
+        ),
+      ),
     );
   }
 }
@@ -84,11 +86,11 @@ You can customize Youtube Player settings using`:
 ```dart
 FlutterYoutubePlayer(
 autoPlay: false,
-                              looping: true,
-                              mute: false,
-                              showControls: true,
-                              showFullScreen: true,
-                              strictRelatedVideos: true,
+looping: true,
+mute: false,
+showControls: true,
+showFullScreen: true,
+strictRelatedVideos: true,
 ),
 ```
 
