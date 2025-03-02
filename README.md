@@ -1,4 +1,6 @@
-# Youtube Player KRD 🎬
+# Youtube Player KRD
+
+<img src="https://youtu.be/DYQ4wReivFI?si=SmHVxI5zDXlzo9tX" width="24px" height="24px";
 
 A powerful and fully customizable **YouTube Player** package for Flutter, allowing seamless integration of YouTube videos with full control over playback options.
 
@@ -58,7 +60,7 @@ class YoutubePlayerKrd extends StatelessWidget {
       appBar: AppBar(title: Text("YouTube Player KRD")),
       body: Center(
         child: YoutubePlayerKrd(
-          url: "https://youtu.be/DYQ4wReivFI?si=SmHVxI5zDXlzo9tX", // Replace with your YouTube video URL
+          url: "https://youtu.be/rC4n6H7AkpY?si=PG10oqcFnVbslvrM", // Replace with your YouTube video URL
           width: 300,
           height: 200,
           autoPlay: true,
@@ -92,13 +94,13 @@ YoutubePlayerKrd(
 )
 ```
 
-## 🎮 Controller Functions
+<!-- ## 🎮 Controller Functions
 
 Control the player dynamically:
 
 ```dart
 not now
-```
+``` -->
 
 ## 📝 License
 
