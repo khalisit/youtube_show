@@ -104,7 +104,7 @@ not now the future function
 
 ## 📝 License
 
-This package is open-source under the **MIT License**. See [LICENSE](./LICENSE) for details.
+This package is open-source under the **MIT License**. See [LICENSE](./license) for details.
 
 ---
 
