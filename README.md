@@ -1,15 +1,15 @@
-# FlutterYouTubePlayer 🎬
+# Youtube Player KRD 🎬
 
-A powerful and fully customizable **FlutterYoutubePlayer** package for Flutter, allowing seamless integration of YouTube videos in your Flutter apps.
+A powerful and fully customizable **YouTube Player** package for Flutter, allowing seamless integration of YouTube videos with full control over playback options.
 
 ## 🚀 Features
 
-- 📺 **Embed YouTube videos** easily
-- 🔄 **Supports fullscreen mode**
-- 🎨 **Customizable UI controls**
-- 📡 **Supports live streaming**
-- 🔧 **Play, pause, seek, and control playback speed**
-- 📱 **Works on Android, iOS, and Web**
+- 📺 **Embed YouTube videos** easily with customizable options.
+- 🔄 **Supports fullscreen mode.**
+- 🎨 **Control visibility of UI controls.**
+- 🔊 **Auto-play, mute, looping support.**
+- 🛠️ **Pause video when navigating away.**
+- 📱 **Works on Android, iOS, and Web.**
 
 ## 📦 Installation
 
@@ -17,7 +17,7 @@ Add this package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  youtube_player: latest_version
+  youtube_player_krd: latest_version
 ```
 
 Then run:
@@ -31,14 +31,14 @@ flutter pub get
 Import the package:
 
 ```dart
-import 'package:youtube_player/youtube_player.dart';
+import 'package:youtube_player_krd/youtube_player_krd.dart';
 ```
 
 ### **Basic Example**
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:youtube_player/youtube_player.dart';
+import 'package:youtube_player_krd/youtube_player_krd.dart';
 
 void main() => runApp(MyApp());
 
@@ -46,32 +46,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: YoutubePlayer(),
+      home: YoutubePlayerKrd(),
     );
   }
 }
 
-class YoutubePlayer extends StatefulWidget {
-  @override
-  _YoutubePlayerState createState() => _YoutubePlayerState();
-}
-
-class _YoutubePlayerState extends State<YoutubePlayer> {
-
-
-
+class YoutubePlayerKrd extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Flutter YouTube Player")),
-      body: Center(child:
-       FlutterYoutubePlayer(
-            url: 'url of youtube',
-            width: 360.0,
-            height: 203.0,
-            showControls: true,
-            showFullScreen: true,
-
+      appBar: AppBar(title: Text("YouTube Player KRD")),
+      body: Center(
+        child: YoutubePlayerKrd(
+          url: "https://youtu.be/DYQ4wReivFI?si=SmHVxI5zDXlzo9tX", // Replace with your YouTube video URL
+          width: 300,
+          height: 200,
+          autoPlay: true,
+          mute: false,
+          looping: false,
+          showControls: true,
+          showFullScreen: true,
+          pauseOnNavigate: true,
         ),
       ),
     );
@@ -81,30 +76,40 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
 
 ## 🎛️ Customization
 
-You can customize Youtube Player settings using`:
+You can customize player settings:
 
 ```dart
-FlutterYoutubePlayer(
-autoPlay: false,
-looping: true,
-mute: false,
-showControls: true,
-showFullScreen: true,
-strictRelatedVideos: true,
-),
+YoutubePlayerKrd(
+  url: "https://www.youtube.com/watch?v=VIDEO_ID",
+  width: 400,
+  height: 300,
+  autoPlay: false,
+  mute: true,
+  looping: true,
+  showControls: false,
+  showFullScreen: true,
+  pauseOnNavigate: false,
+)
 ```
 
-## 🛠️ Available Methods
+## 🎮 Controller Functions
 
 Control the player dynamically:
 
 ```dart
-not now the future function
+YoutubePlayerController _controller = YoutubePlayerController();
+
+_controller.play();
+_controller.pause();
+_controller.seekTo(Duration(seconds: 30));
+_controller.mute();
+_controller.unMute();
+_controller.toggleFullScreen();
 ```
 
 ## 📝 License
 
-This package is open-source under the **MIT License**. See [LICENSE](./license) for details.
+This package is open-source under the **MIT License**. See [LICENSE](./LICENSE) for details.
 
 ---
 
