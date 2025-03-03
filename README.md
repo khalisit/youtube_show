@@ -1,7 +1,8 @@
-# Youtube Player KRD
+# Youtube Show
+
 <img src="https://www.svgrepo.com/show/13671/youtube.svg" width="90px" height="90px" >
 
-A powerful and fully customizable **YouTube Player** package for Flutter, allowing seamless integration of YouTube videos with full control over playback options.
+A powerful and fully customizable **YouTube Show** package for Flutter, allowing seamless integration of YouTube videos with full control over playback options.
 
 ## 🚀 Features
 
@@ -32,14 +33,14 @@ flutter pub get
 Import the package:
 
 ```dart
-import 'package:youtube_player_krd/youtube_player_krd.dart';
+import 'package:youtube_show/youtube_show.dart';
 ```
 
 ### **Basic Example**
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:youtube_player_krd/youtube_player_krd.dart';
+import 'package:youtube_show/youtube_show.dart';
 
 void main() => runApp(MyApp());
 
@@ -47,18 +48,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: YoutubePlayerKrd(),
+      home: YoutubeShow(),
     );
   }
 }
 
-class YoutubePlayerKrd extends StatelessWidget {
+class YoutubeShow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("YouTube Player KRD")),
       body: Center(
-        child: YoutubePlayerKrd(
+        child: YoutubeShow(
           url: "https://youtu.be/rC4n6H7AkpY?si=PG10oqcFnVbslvrM", // Replace with your YouTube video URL
           width: 300,
           height: 200,
@@ -80,7 +81,7 @@ class YoutubePlayerKrd extends StatelessWidget {
 You can customize player settings:
 
 ```dart
-YoutubePlayerKrd(
+YoutubeShow(
   url: "https://www.youtube.com/watch?v=VIDEO_ID",
   width: 400,
   height: 300,
@@ -107,4 +108,4 @@ This package is open-source under the **MIT License**. See [LICENSE](./LICENSE) 
 
 ---
 
-🌟 **Like this package? Give it a star on GitHub!** 🚀
+🌟 **Like this package? Give it a star on GitHub!** 🚀 [GithubLink](https://github.com/khalisit/youtube_show)
