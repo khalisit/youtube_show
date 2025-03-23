@@ -19,7 +19,7 @@ Add this package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  youtube_player_krd: latest_version
+  youtube_show: latest_version
 ```
 
 Then run:
@@ -48,12 +48,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: YoutubeShow(),
+      home: YoutubeShowpage(),
     );
   }
 }
 
-class YoutubeShow extends StatelessWidget {
+class YoutubeShowpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

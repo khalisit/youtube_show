@@ -1,0 +1,22 @@
+name: youtube_show
+description: "A new Flutter package to Youtube Player easy."
+version: 0.0.2
+repository: https://github.com/khalisit/youtube_show
+license: MIT
+
+environment:
+  sdk: ^3.7.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path: ^1.9.1
+  youtube_player_iframe: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
